@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #2c3e50;
+  --body: #566d7b;
+  --band: #f4f0ef;
+  --border: #b5aea2;
+  --brand: #89bbda;
+  --accent: #7895b2;
+  --panel: #7895b2;
+  --panel-text: #ffffff;
+}
+
+html {
+  /* Globally bump everything that's rem-based by ~25% (+4px at base) */
+  font-size: 20px;
+}
+
+body {
+  background: var(--background);
+  color: var(--body);
+  /* Web 2.0 throwback stack — Trebuchet leads with Lucida/Verdana fallbacks */
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    Geneva, Tahoma, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-body: var(--body);
+  --color-band: var(--band);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-panel: var(--panel);
+  --color-panel-text: var(--panel-text);
+}
