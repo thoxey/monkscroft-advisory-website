@@ -12,7 +12,7 @@ export default function About() {
           </h2>
         </div>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2 md:items-stretch md:gap-8">
+        <div className="mx-auto mt-10 max-w-2xl">
           {/* Bio card with portrait floated right — text wraps around */}
           <div className="rounded-sm border border-border bg-white p-6 shadow-sm sm:p-8">
             <div className="float-right mb-3 ml-5 overflow-hidden rounded-sm shadow-sm">
@@ -52,17 +52,6 @@ export default function About() {
             </div>
 
             <div className="clear-both" />
-          </div>
-
-          {/* Onsite photo */}
-          <div className="overflow-hidden rounded-sm shadow-sm">
-            <Image
-              src="/onsite_photo.jpeg"
-              alt="James onsite at an industrial electrification project"
-              width={1200}
-              height={1500}
-              className="h-full w-full object-cover"
-            />
           </div>
         </div>
       </div>

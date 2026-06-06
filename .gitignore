@@ -30,3 +30,6 @@ yarn-error.log*
 # misc
 .DS_Store
 *.pem
+
+# local dev tooling
+.claude/
